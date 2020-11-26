@@ -1,8 +1,13 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    @include font_primary;
+    .restaurant_title {
+        h1 {
+            @include font_secondary;
+        }
+    }
     footer {
         h4 {
-            font-family: 'Shrikhand', cursive;
+            @include font_secondary;
         }
     }
 }

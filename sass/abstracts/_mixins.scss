@@ -18,7 +18,16 @@
         @content;
     }
 }
-@mixin border_radius {
+@mixin font_primary {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin font_secondary {
+    font-family: 'Shrikhand', cursive;
+}
+@mixin border_radius_10 {
+    border-radius: 10px;
+}
+@mixin border_radius_20 {
     border-radius: 20px;
 }
 @mixin box-shadow ($color:$color-quaternary){

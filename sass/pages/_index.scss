@@ -33,7 +33,7 @@
             width: 100%;
             padding: 20px 20px 20px 0px;
             background-color: $color-quaternary;
-            @include border_radius;
+            @include border_radius_20;
             @include box-shadow;
             }
         }

@@ -1,0 +1,43 @@
+.home_section {
+    z-index: 2;
+    height: 250px;
+    background-image: url("img/la_note_enchantée.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.menu_container {
+    z-index: 1;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-quaternary;
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+    &__title {
+        margin-top: 20px;
+    }
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px;
+        margin: 20px 0px 20px 0px;
+        @include border_radius_10;
+        @include box-shadow;
+        h4 {
+            width: 100%;
+        }
+    }
+    .restaurant_title {
+        display: flex;
+        justify-content: space-between;
+        i {
+            padding: 12.5px;
+            font-size: 20px;
+        }
+    }
+    .order_section {
+        text-align: center;
+    }
+}
