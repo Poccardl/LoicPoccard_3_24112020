@@ -1,0 +1,21 @@
+.home_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $color-quaternary;
+    .location_section {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .element {
+        width: 100%;
+        text-align: center;
+    }
+    .m_20 {
+        margin: 20px;
+    }
+    .mt_10 {
+        margin-top: 10px;
+    }
+}
