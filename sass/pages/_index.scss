@@ -19,3 +19,32 @@
         margin-top: 10px;
     }
 }
+.operation_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .element {
+        display: flex;
+        margin: 0px 20px 20px 20px;
+        width: 100%;
+        .card {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px 20px 20px 0px;
+            background-color: $color-quaternary;
+            @include border_radius;
+            }
+        }
+    .content {
+        padding: 5px 10px 5px 10px;
+    }
+    .numbers {
+        z-index: 1;
+        color: white;
+        margin: 20px -15px 20px 0px;
+        padding: 5px 10px 5px 10px;
+        background-color: $color-primary;
+        border-radius: 90px;
+    }
+}
