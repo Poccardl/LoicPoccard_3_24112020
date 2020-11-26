@@ -21,3 +21,6 @@
 @mixin border_radius {
     border-radius: 20px;
 }
+@mixin box-shadow ($color:$color-quaternary){
+    box-shadow: 0px 0px 10px darken($color, 20%);
+}
