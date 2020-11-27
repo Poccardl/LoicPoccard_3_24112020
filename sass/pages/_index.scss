@@ -1,6 +1,9 @@
 .title_section {
     margin: 0px 20px 0px 20px;
     width: 100%;
+    @include laptop {
+        padding-left: 5%;
+    }
 }
 .home_container {
     display: flex;
@@ -24,13 +27,19 @@
 }
 .operation_container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     padding: 20px 0px 20px 0px;
+    @include laptop {
+        flex-direction: row;
+        justify-content: center;
+    }
     .element {
         display: flex;
         margin: 0px 20px 20px 20px;
         width: 100%;
+        @include laptop {
+            width: 30%;
+        }
         .card {
             display: flex;
             justify-content: center;
@@ -55,19 +64,30 @@
 }
 .restaurants_container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     background-color: $color-quaternary;
     padding: 20px 0px 20px 0px;
+    justify-content: center;
+    @include desktop {
+        flex-direction: row;
+    }
     .card {
         display: flex;
         width: 100%;
+        max-width: 800px;
         margin: 20px 20px 20px 20px;
         background-color: white;
         border-radius: 10px;
         @include box-shadow;
+        @include laptop {
+            width: 80%;
+        }
+        @include desktop {
+            width: 20%;
+        }
         a {
             color: $color-quinary;
+            width: 100%;
         }
         img {
             width: 100%;
@@ -81,6 +101,9 @@
         .element {
             width: 50%;
             padding: 20px 20px 20px 10px;
+            @include desktop {
+                width: auto;
+            }
             i {
                 margin-left: 90%;
                 font-size: 20px;

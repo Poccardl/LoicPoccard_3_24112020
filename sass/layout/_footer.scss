@@ -2,8 +2,20 @@ footer {
     padding: 25px;
     color: white;
     background-color: $color-quinary;
+    @include laptop {
+        padding-left: 5%;
+    }
+    ul {
+        @include laptop {
+            display: flex;
+            justify-content: center;
+        }
+    }
     li {
         margin: 5px 0px 5px 0px;
+        @include laptop {
+            margin: 0px 20px 0px 20px;
+        }
         a {
             color: white;
         }
