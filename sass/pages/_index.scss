@@ -7,11 +7,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: $color-quaternary;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
     .location_section {
         display: flex;
         justify-content: center;
-        margin: 20px;
+        padding: 20px;
+        @include background-quaternary-dark;
+        i {
+            margin: 0px 10px 0px 10px;
+        }
     }
     .element {
         width: 100%;

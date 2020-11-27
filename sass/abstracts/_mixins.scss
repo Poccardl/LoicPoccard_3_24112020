@@ -30,6 +30,9 @@
 @mixin border_radius_20 {
     border-radius: 20px;
 }
-@mixin box-shadow ($color:$color-quaternary){
+@mixin background-quaternary-dark ($color:$color-quaternary) {
+    background-color: darken($color, 5%);
+}
+@mixin box-shadow ($color:$color-quaternary) {
     box-shadow: 0px 0px 10px darken($color, 20%);
 }
