@@ -15,6 +15,11 @@
     padding: 20px;
     &__title {
         margin-top: 20px;
+        h4 {
+            width: 40px;
+            padding: 0px 0px 5px 0px;
+            border-bottom: solid $color-tertiary;
+        }
     }
     &__card {
         display: flex;
