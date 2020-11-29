@@ -8,11 +8,17 @@
 .menu_container {
     z-index: 1;
     margin-top: -40px;
-    display: flex;
-    flex-direction: column;
     background-color: $color-quaternary;
     border-radius: 30px 30px 0px 0px;
     padding: 20px;
+    .categories {
+        @include laptop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
     &__title {
         margin-top: 20px;
         h4 {
@@ -30,6 +36,9 @@
         margin: 20px 0px 20px 0px;
         @include border_radius_10;
         @include box-shadow;
+        @include laptop {
+            width: 60%;
+        }
         h4 {
             width: 100%;
         }
