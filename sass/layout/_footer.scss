@@ -3,7 +3,12 @@ footer {
     color: white;
     background-color: $color-quinary;
     @include laptop {
+        display: flex;
+        justify-content: center;
         padding-left: 5%;
+        h4 {
+            padding: 16px 20px 0px 0px;
+        }
     }
     ul {
         @include laptop {
