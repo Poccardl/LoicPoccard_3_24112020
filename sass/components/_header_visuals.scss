@@ -5,14 +5,14 @@
     background-size: cover;
 }
 .palette_du_gout {
-    background-image: url("img/la_palette_du_gout.jpg");
+    @include palette_du_gout;
 }
 .note_enchantee {
-    background-image: url("img/la_note_enchantee.jpg");
+    @include note_enchantee;
 }
 .a_la_française {
-    background-image: url("img/a_la_francaise.jpg");
+    @include a_la_française;
 }
 .delice_des_sens {
-    background-image: url("img/le_delice_des_sens.jpg");
+    @include delice_des_sens;
 }

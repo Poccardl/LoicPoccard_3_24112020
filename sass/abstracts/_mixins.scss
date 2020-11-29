@@ -26,6 +26,19 @@
 @mixin font_secondary {
     font-family: 'Shrikhand', cursive;
 }
+/* HEADER VISUALS */
+@mixin palette_du_gout($header_visuals: map-get($header_visuals, palette_du_gout)) {
+    background-image: url($header_visuals);
+}
+@mixin note_enchantee($header_visuals: map-get($header_visuals, note_enchantee)) {
+    background-image: url($header_visuals);
+}
+@mixin a_la_française($header_visuals: map-get($header_visuals, a_la_française)) {
+    background-image: url($header_visuals);
+}
+@mixin delice_des_sens ($header_visuals: map-get($header_visuals, delice_des_sens)) {
+    background-image: url($header_visuals);
+}
 /* OTHERS */
 @mixin border_radius_10 {
     border-radius: 10px;
