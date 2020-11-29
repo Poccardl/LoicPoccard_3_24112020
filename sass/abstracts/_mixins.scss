@@ -1,3 +1,4 @@
+/* MEDIA QUERIES */
 @mixin mobile {
     @media (min-width: map-get($breakpoints, mobile)) {
         @content;
@@ -18,12 +19,14 @@
         @content;
     }
 }
+/* FONTS */
 @mixin font_primary {
     font-family: 'Roboto', sans-serif;
 }
 @mixin font_secondary {
     font-family: 'Shrikhand', cursive;
 }
+/* OTHERS */
 @mixin border_radius_10 {
     border-radius: 10px;
 }
