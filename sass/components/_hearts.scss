@@ -1,0 +1,7 @@
+.fa-heart {
+    color:black;
+    transition: color 400ms;
+    &:hover {
+        color: red;
+    }
+}

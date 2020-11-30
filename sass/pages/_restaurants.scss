@@ -1,3 +1,13 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 .menu_container {
     z-index: 1;
     margin-top: -40px;
@@ -34,6 +44,20 @@
         }
         h4 {
             width: 100%;
+        }
+    }
+    .animation {
+        &__1{
+            animation: slideDown 1s;
+        }
+        &__2 {
+            animation: slideDown 2s;
+        }
+        &__3 {
+            animation: slideDown 3s;
+        }
+        &__4 {
+            animation: slideDown 4s;
         }
     }
     .restaurant_title {
