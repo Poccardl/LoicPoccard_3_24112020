@@ -3,9 +3,11 @@ button {
     padding: 20px 50px 20px 50px;
     border-radius: 30px;
     border-style: none;
+    @include box-shadow;
     color: white;
     background: linear-gradient($color-secondary, $color-primary);
     &:hover {
+        @include box-shadow-hight;
         background: linear-gradient($color-secondary-light, $color-primary-light);
     }
 }
