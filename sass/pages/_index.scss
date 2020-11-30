@@ -48,6 +48,12 @@
             background-color: $color-quaternary;
             @include border_radius_20;
             @include box-shadow;
+            &:hover {
+                background-color: $color-primary-very-light;
+                i {
+                    color: $color-primary;
+                }
+            }
             }
         }
     .content {
