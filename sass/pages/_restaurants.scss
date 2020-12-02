@@ -31,6 +31,9 @@
         }
     }
     &__card {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -44,6 +47,40 @@
         }
         h4 {
             width: 100%;
+        }
+        .card_animation_1 {
+            position: absolute;
+            top: 0px;
+            right: -70px;
+            transition: 1s;
+            padding: 20px 25px 20px 25px;
+            background-color: $color-tertiary;
+            i {
+                font-size: 20px;
+                color: white;
+                transition: 1s;
+                transform: rotate(0.5turn);
+            }
+        }
+        .card_animation_2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            padding: 35px 20px 10px 0px;
+            transition: 1s 100ms;
+            background-color: white;
+        }
+        .card_animation_3 {
+            position: absolute;
+        }
+        &:hover > .card_animation_1 {
+            right: 0px;
+            i {
+                transform: rotate(1turn);
+            }
+        }
+        &:hover > .card_animation_2 {
+            right: 60px;
         }
     }
     .animation {
