@@ -1,0 +1,29 @@
+@keyframes loaderSpinner {
+    0% {
+        opacity: 1;
+        transform: rotate(2turn);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.loader_spinner {
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: calc(50% - 50px);
+    @include desktop {
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+    }
+    i {
+        animation: loaderSpinner 5s;
+        opacity: 0;
+        position: absolute;
+        font-size: 100px;
+        background: -webkit-linear-gradient($color-secondary-light, $color-primary-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}

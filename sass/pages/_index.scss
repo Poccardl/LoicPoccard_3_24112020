@@ -1,12 +1,3 @@
-@keyframes loaderSpinner {
-    0% {
-        opacity: 1;
-        transform: rotate(2turn);
-    }
-    100% {
-        opacity: 0;
-    }
-}
 @keyframes loaderBlur {
     0% {
         filter: blur(4px);
@@ -15,23 +6,9 @@
         filter: blur(0px);
     }
 }
-body {
+.body {
     animation: loaderBlur 5s;
-}
-.loader_spinner {
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 50px);
-    i {
-        animation: loaderSpinner 5s;
-        opacity: 0;
-        position: absolute;
-        font-size: 100px;
-        background: -webkit-linear-gradient($color-secondary-light, $color-primary-light);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
+    z-index: 2;
 }
 .title_section {
     margin: 0px 20px 0px 20px;
