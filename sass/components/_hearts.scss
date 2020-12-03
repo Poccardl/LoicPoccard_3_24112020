@@ -1,6 +1,8 @@
 .heart {
+    cursor: pointer;
     position: relative;
     overflow: hidden;
+    width: 100%;
     .fas {
         position: absolute;
         top: 38px;
@@ -13,7 +15,7 @@
     }
     .far {
         position: absolute;
-        bottom: 20px;
+        top: 38px;
         right: 10px;
         background: -webkit-linear-gradient($color-secondary-light, $color-primary-light);
         -webkit-background-clip: text;
