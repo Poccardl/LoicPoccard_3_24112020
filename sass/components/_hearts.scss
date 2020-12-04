@@ -4,7 +4,7 @@
     font-size: 20px;
     .fas {
         position: absolute;
-        top: 38px;
+        top: 15px;
         right: 10px;
         opacity: 0;
         transition: opacity 1s;
@@ -14,7 +14,7 @@
     }
     .far {
         position: absolute;
-        top: 38px;
+        top: 15px;
         right: 10px;
         background: -webkit-linear-gradient($color-secondary-light, $color-primary-light);
         -webkit-background-clip: text;
