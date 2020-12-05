@@ -16,11 +16,14 @@
         position: absolute;
         top: 15px;
         right: 10px;
-        background: -webkit-linear-gradient($color-secondary-light, $color-primary-light);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: black;
     }
     &:hover > .fas {
         opacity: 1;
+    }
+    &:hover > .far {
+        background: -webkit-linear-gradient($color-secondary-light, $color-primary-light);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
