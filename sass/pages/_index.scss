@@ -23,6 +23,8 @@
     background-color: $color-quaternary;
     padding: 0px 0px 20px 0px;
     .location_section {
+        border-top: solid;
+        border-color: $color-quaternary-dark;
         display: flex;
         justify-content: center;
         padding: 20px;
